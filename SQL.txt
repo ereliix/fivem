@@ -1,0 +1,22 @@
+CREATE TABLE `premiumpont` (
+  `id` int(11) NOT NULL,
+  `identifier` varchar(100) NOT NULL,
+  `steamname` varchar(255) NOT NULL COMMENT 'Steam név',
+  `dcname` varchar(255) NOT NULL COMMENT 'Discord nicknév',
+  `pont` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `premiumpont_log`
+--
+
+CREATE TABLE `premiumpont_log` (
+  `id` int(11) NOT NULL,
+  `steamid` varchar(244) NOT NULL,
+  `cuccneve` varchar(244) NOT NULL,
+  `darab` int(20) NOT NULL,
+  `kocsi` varchar(255) DEFAULT NULL,
+  `datum` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
